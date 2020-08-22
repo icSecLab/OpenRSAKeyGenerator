@@ -56,7 +56,7 @@ public class OpenRSAKeyGenerator {
             keys[0] = N.toString() + "," + pM.toString();
             keys[1] = N.toString() + "," + d.toString();
         }else{
-            NumberFormatException ex = new NumberFormatException("模数必须与φ(N)互质并小于φ(N)");
+            NumberFormatException ex = new NumberFormatException("Generator Failed.");
             throw ex;
         }
         return keys;
