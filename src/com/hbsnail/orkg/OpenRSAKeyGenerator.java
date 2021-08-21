@@ -56,7 +56,7 @@ public class OpenRSAKeyGenerator {
             keys[0] = N.toString() + "," + pM.toString();
             keys[1] = N.toString() + "," + d.toString();
         }else{
-            NumberFormatException ex = new NumberFormatException("Generator Failed.");
+            NumberFormatException ex = new NumberFormatException("Generation Failed.");
             throw ex;
         }
         return keys;
